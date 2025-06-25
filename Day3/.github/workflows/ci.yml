@@ -1,16 +1,10 @@
-name: Basic CI Workflow
+name: Hello CI
 
-on:
-  push:
-    branches: 
-      - '**'
+on: [push]
 
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Say Hello
-        run: echo "Hello again this time, DevOps!"
+      - name: Print greeting
+        run: echo "Hi from GitHub Actions!"

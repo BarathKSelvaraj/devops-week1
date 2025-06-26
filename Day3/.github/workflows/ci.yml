@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hi from GitHub Actions!"
+        run: echo "Hi from GitHub Actions! Now updated"
